@@ -15,7 +15,7 @@ const products = [
 app.put("/products/:id", (req, res) => {
   const id = parseInt(req.params.id);
 
-  const product = products.find(p => p.id === id);
+  const product = products.find(p => p.id === id);app
 
   if (!product) {
     return res.status(404).json({ message: "Product not found" });
